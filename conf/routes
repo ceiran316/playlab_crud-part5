@@ -23,6 +23,9 @@ GET    /delProduct/:id            controllers.HomeController.deleteProduct(id: L
 # Update a product by id
 GET	    /updateProduct/:id			controllers.HomeController.updateProduct(id: Long)
 
+GET 	/login		controllers.LoginController.login
+POST	/loginSubmit		controllers.LoginController.loginSubmit
+
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
